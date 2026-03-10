@@ -1,61 +1,15 @@
 import { Metadata } from 'next';
-import ResourcesPage from '@/components/ResourcesPage';
+import HomePage from '@/components/HomePage';
 
 export const metadata: Metadata = {
-  title: '全网资源聚合',
-  description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-  alternates: {
-    canonical: 'https://openclaw101.dev/zh/resources',
-    languages: {
-      'en': 'https://openclaw101.dev/resources',
-      'zh': 'https://openclaw101.dev/zh/resources',
-    },
-  },
-  openGraph: {
-    title: '全网资源聚合',
-    description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-    type: 'website',
-    url: 'https://openclaw101.dev/zh/resources',
-    siteName: 'OpenClaw 101',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: '全网资源聚合 - OpenClaw 101',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '全网资源聚合',
-    description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-    images: ['/og-image.png'],
-  },
+  title: 'ClawBiz - 企业AI转型专家',
+  description: '企业AI转型咨询服务，专业技术架构咨询，助力企业实现AI升级',
 };
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  name: '全网资源聚合 - OpenClaw 101',
-  url: 'https://openclaw101.dev/zh/resources',
-  description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
-  inLanguage: 'zh-CN',
-  isPartOf: {
-    '@type': 'WebSite',
-    name: 'OpenClaw 101',
-    url: 'https://openclaw101.dev',
-  },
-};
-
-export default function ZhResourcesPage() {
+export default function Home() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <ResourcesPage locale="zh" />
+      <HomePage />
     </main>
   );
 }

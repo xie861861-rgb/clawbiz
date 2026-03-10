@@ -1,126 +1,69 @@
 {
   "meta": {
-    "title": "OpenClaw 101 - Your AI Assistant Learning Hub",
-    "description": "Master your AI personal assistant in 7 days. Tutorials, skills, and community resources for OpenClaw."
+    "title": "ClawBiz - Enterprise AI Solutions",
+    "description": "Professional enterprise AI transformation consulting services"
   },
   "nav": {
     "home": "Home",
-    "learn": "Learn",
-    "skills": "Skills",
-    "resources": "Resources",
-    "community": "Community",
-    "getStarted": "Get Started"
+    "learn": "Services",
+    "skills": "Solutions",
+    "resources": "About",
+    "community": "Contact",
+    "getStarted": "Contact Us"
   },
   "hero": {
-    "badge": "🚀 Open Source AI Agent",
-    "title": "Master OpenClaw",
-    "titleHighlight": "in 7 Days",
-    "subtitle": "Your personal AI assistant that actually does things. From setup to advanced automation — start your journey here.",
-    "cta": "Start Learning",
-    "ctaSecondary": "Browse Resources",
+    "badge": "💼 Enterprise AI",
+    "title": "Enterprise AI",
+    "titleHighlight": "Solutions",
+    "subtitle": "Professional Consulting · Technical Architecture · Implementation · Training",
+    "cta": "Contact Us",
+    "ctaSecondary": "Learn More",
     "stats": {
-      "stars": "GitHub Stars",
-      "skills": "Community Skills",
-      "platforms": "Platforms Supported"
+      "stars": "Experience",
+      "skills": "Cases",
+      "platforms": "Partners"
     }
   },
   "whatIs": {
-    "badge": "💡 What is OpenClaw?",
-    "title": "Your AI That Actually Does Things",
-    "subtitle": "OpenClaw is an open-source AI assistant that runs locally on your device and connects to your favorite apps.",
+    "badge": "💡 About Us",
+    "title": "Enterprise AI Experts",
+    "subtitle": "We specialize in enterprise AI transformation, providing full-cycle services from consulting to implementation.",
     "features": {
       "local": {
-        "title": "Runs Locally",
-        "desc": "Your data stays on your device. Full control, full privacy."
+        "title": "Consulting",
+        "desc": "Assess AI maturity and design transformation roadmap."
       },
       "connected": {
-        "title": "Connected Everywhere",
-        "desc": "Telegram, Discord, WhatsApp, Slack, iMessage — one assistant, all platforms."
+        "title": "Architecture",
+        "desc": "Design scalable and secure AI Agent architecture."
       },
       "memory": {
-        "title": "Persistent Memory",
-        "desc": "Remembers your preferences, past conversations, and adapts over time."
+        "title": "Implementation",
+        "desc": "End-to-end implementation support for AI deployment."
       },
       "extensible": {
-        "title": "700+ Skills",
-        "desc": "From calendar management to web scraping — extend capabilities with community skills."
+        "title": "Training",
+        "desc": "Team training on AI Agent usage and maintenance."
       }
     }
   },
   "learning": {
-    "badge": "📚 7-Day Learning Path",
-    "title": "From Zero to Power User",
-    "subtitle": "A structured curriculum to master OpenClaw step by step.",
-    "days": {
-      "1": { "title": "Day 1: Meet OpenClaw", "desc": "Understand what it is and why it matters" },
-      "2": { "title": "Day 2: Installation", "desc": "Set up your local environment" },
-      "3": { "title": "Day 3: First Conversation", "desc": "Configure your first AI chat" },
-      "4": { "title": "Day 4: Platform Integration", "desc": "Connect Telegram, Discord, and more" },
-      "5": { "title": "Day 5: Skills & Automation", "desc": "Extend capabilities with skills" },
-      "6": { "title": "Day 6: Memory & Personality", "desc": "Customize behavior and memory" },
-      "7": { "title": "Day 7: Advanced Workflows", "desc": "Build complex automations" }
-    },
-    "cta": "Start Day 1 →"
+    "title": "Our Services",
+    "subtitle": "Comprehensive enterprise AI transformation services"
   },
   "skills": {
-    "badge": "🧩 Skills Ecosystem",
-    "title": "Extend Your Assistant",
-    "subtitle": "Browse community-built skills or create your own.",
-    "categories": {
-      "productivity": "Productivity",
-      "developer": "Developer Tools",
-      "social": "Social Media",
-      "health": "Health & Wellness",
-      "marketing": "Marketing",
-      "utilities": "Utilities"
-    },
-    "cta": "Browse ClawHub →",
-    "warning": "⚠️ Security Notice: Always review skill source code before installation. Some malicious skills have been reported."
+    "title": "Solutions",
+    "subtitle": "AI solutions for different industries and scenarios"
   },
   "resources": {
-    "badge": "📚 Curated Resources",
-    "title": "Best Tutorials & Guides",
-    "subtitle": "From Alibaba Cloud to DigitalOcean — one-stop access to the best OpenClaw tutorials.",
-    "stats": {
-      "tutorials": "Tutorials",
-      "chinese": "Chinese",
-      "english": "English",
-      "categories": "Categories"
-    },
-    "sources": "Sources:",
-    "cta": "View All Resources →",
-    "visitLink": "Visit ↗",
-    "langZh": "中文",
-    "langEn": "EN"
+    "title": "Learn More",
+    "subtitle": "Follow us for the latest enterprise AI updates"
   },
   "community": {
-    "badge": "👥 Community",
-    "title": "Join the Movement",
-    "subtitle": "Connect with developers and users building the future of personal AI.",
-    "discord": {
-      "title": "Discord Community",
-      "desc": "Real-time chat with thousands of users",
-      "cta": "Join Discord"
-    },
-    "github": {
-      "title": "GitHub",
-      "desc": "Contribute to the open-source project",
-      "cta": "Star on GitHub"
-    },
-    "twitter": {
-      "title": "Twitter/X",
-      "desc": "Latest updates and announcements",
-      "cta": "Follow @OpenClaw"
-    }
+    "title": "Contact Us",
+    "subtitle": "Professional team provides enterprise AI transformation consulting"
   },
   "footer": {
-    "tagline": "Your gateway to mastering OpenClaw",
-    "links": {
-      "docs": "Official Docs",
-      "github": "GitHub",
-      "discord": "Discord",
-      "clawhub": "ClawHub"
-    },
-    "copyright": "© 2026 OpenClaw 101. Not affiliated with OpenClaw project."
+    "madeBy": "© 2026 ClawBiz. All rights reserved."
   }
 }

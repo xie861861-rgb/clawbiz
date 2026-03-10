@@ -1,25 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import LanguageSwitcher from './LanguageSwitcher';
-import { Dictionary } from '@/lib/i18n';
 
-interface NavbarProps {
-  locale: 'en' | 'zh';
-  dict: Dictionary;
-}
-
-export default function Navbar({ locale, dict }: NavbarProps) {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const prefix = locale === 'en' ? '' : `/${locale}`;
-
   const links = [
-    { label: dict.nav.learn, href: '#what-is' },
-    { label: dict.nav.skills, href: '#skills' },
-    { label: dict.nav.resources, href: '#resources' },
-    { label: dict.nav.community, href: '#community' },
+    { label: '服务', href: '#services' },
+    { label: '方案', href: '#solutions' },
+    { label: '关于', href: '#about' },
+    { label: '联系', href: '#contact' },
   ];
 
   useEffect(() => {
@@ -42,8 +33,8 @@ export default function Navbar({ locale, dict }: NavbarProps) {
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <a href={prefix || '/'} className="font-bold text-base sm:text-lg whitespace-nowrap" style={{ color: '#fff' }}>
-          🐾 <span className="gradient-text">OpenClaw</span> 101
+        <a href="/" className="font-bold text-base sm:text-lg whitespace-nowrap" style={{ color: '#fff' }}>
+          🐾 <span className="gradient-text">ClawBiz</span>
         </a>
 
         {/* Desktop links */}
@@ -59,24 +50,11 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             </a>
           ))}
           <a
-            href={`${prefix}/resources`}
-            className="text-sm transition-colors duration-200 font-medium"
-            style={{ color: '#10B981' }}
-          >
-            {locale === 'zh' ? '全部资源' : 'All Resources'}
-          </a>
-          
-          {/* Language Switcher */}
-          <LanguageSwitcher />
-          
-          <a
-            href="https://github.com/mengjian-github/openclaw101"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors duration-200"
+            href="#contact"
+            className="text-sm px-4 py-2 bg-blue-600 hover:bg-blue-500 font-semibold rounded-lg transition-colors duration-200"
             style={{ color: '#fff' }}
           >
-            ⭐ GitHub
+            立即咨询
           </a>
         </div>
 
@@ -85,7 +63,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           className="md:hidden hover:text-white transition-colors"
           style={{ color: 'rgba(255,255,255,0.6)' }}
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-label={mobileOpen ? '关闭菜单' : '打开菜单'}
         >
           {mobileOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,27 +92,12 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             </a>
           ))}
           <a
-            href={`${prefix}/resources`}
+            href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="block py-3 transition-colors duration-200 hover:text-white font-medium"
+            className="block py-3 transition-colors duration-200 font-medium"
             style={{ color: '#10B981' }}
           >
-            {locale === 'zh' ? '全部资源 →' : 'All Resources →'}
-          </a>
-          
-          {/* Mobile Language Switcher */}
-          <div className="py-3 border-t border-white/10 mt-2">
-            <LanguageSwitcher />
-          </div>
-          
-          <a
-            href="https://github.com/mengjian-github/openclaw101"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block py-3 transition-colors duration-200 hover:text-white"
-            style={{ color: 'rgba(255,255,255,0.6)' }}
-          >
-            ⭐ GitHub
+            立即咨询 →
           </a>
         </div>
       )}
