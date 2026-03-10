@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "wrangler pages deploy .next/export --project-name=clawbiz"
+    "deploy": "npx @opennextjs/cloudflare build && npx @opennextjs/cloudflare deploy"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.17.1",
     "gray-matter": "^4.0.3",
     "next": "15.4.11",
     "react": "^18.3.1",
