@@ -1,61 +1,17 @@
-import { Metadata } from 'next';
-import ResourcesPage from '@/components/ResourcesPage';
+import ConsultButton from '@/components/ConsultButton';
 
-export const metadata: Metadata = {
-  title: 'Resource Hub',
-  description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-  alternates: {
-    canonical: 'https://openclaw101.dev/resources',
-    languages: {
-      'en': 'https://openclaw101.dev/resources',
-      'zh': 'https://openclaw101.dev/zh/resources',
-    },
-  },
-  openGraph: {
-    title: 'Resource Hub',
-    description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-    type: 'website',
-    url: 'https://openclaw101.dev/resources',
-    siteName: 'OpenClaw 101',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Resource Hub - OpenClaw 101',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Resource Hub',
-    description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-    images: ['/og-image.png'],
-  },
-};
-
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  name: 'Resource Hub - OpenClaw 101',
-  url: 'https://openclaw101.dev/resources',
-  description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-  inLanguage: 'en',
-  isPartOf: {
-    '@type': 'WebSite',
-    name: 'OpenClaw 101',
-    url: 'https://openclaw101.dev',
-  },
-};
-
-export default function EnResourcesPage() {
+export default function ResourcesPage() {
   return (
-    <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <ResourcesPage locale="en" />
+    <main className="min-h-screen bg-gray-50 py-24 px-4">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          联系我们
+        </h1>
+        <p className="text-lg text-gray-600 mb-8">
+          点击右下角按钮添加微信咨询
+        </p>
+      </div>
+      <ConsultButton />
     </main>
   );
 }

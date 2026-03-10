@@ -14,7 +14,7 @@ export default function ResourcesPage() {
           点击右下角按钮添加微信咨询
         </p>
       </div>
-      <ConsultButton locale="zh" />
+      <ConsultButton />
     </main>
   );
 }
